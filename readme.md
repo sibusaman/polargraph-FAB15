@@ -1,4 +1,5 @@
 # Machines for Learning : The Wall Plotter
+### **[Funded by The Hamdan Foundation, UAE](http://www.ha.ae/en/web/guest/home)**
 
 During FAB15, 12 machines were built by the FabLab community and donated to 12 schools in Egypt. We made 
 - 2 x mini CNC mill
@@ -288,6 +289,10 @@ Now we are done with the hard part. Load a vector and draw.
 
 ## All mechanical CAD was made by OnShape and the are [available HERE](https://cad.onshape.com/documents/d169351ce7a3db9697c065e0/w/642eb27db53fa1065eb8dde2/e/45781a3c8a8712fb6f7df40b)
 
+- [PolarGraph](http://www.polargraph.co.uk) website
+- [Polargraph Wiki](https://github.com/euphy/polargraph/wiki)
+- [CNC-shield](https://blog.protoneer.co.nz/arduino-cnc-shield/)
+- [An inscrutable article](https://www.instructables.com/id/Polargraph-Drawing-Machine/)
 
 
 #
