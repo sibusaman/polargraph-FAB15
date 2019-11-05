@@ -1,4 +1,42 @@
+# Machines for Learning : The Wall Plotter
+
+During FAB15, 12 machines were built by the FabLab community and donated to 12 schools in Egypt. We made 
+- 2 x mini CNC mill
+- 5 x 3D printer
+- 5 x Wall Plotter
+  
+The project was Funded by **[The Hamdan Foundation, UAE](http://www.ha.ae/en/web/guest/home)**.
+
+The wall plotter design is mostly based on the [PolarGraph](http://www.polargraph.co.uk) machine. Here we document the slight differences in the design, the assembly instruction, software setup, calibration steps and other trouble shooting steps.
+
+The machine was delivered in fully assembled and in fully working condition. Also the machine is very simple in terms of mechanical complexity. Which means detailed assembly instruction won't be necessary, as it is very trivial once the machine is in hand. The end users are supposed to hack these machines, modify, redesign..., so, we have provided some crucial information to help the end user do so. 
+
+
+
 # Hardware
+
+## BOM
+
+The BOM is only for assembly, the end user do not need these as they already got the machine fully assembled.
+
+- 2 x Nema 17 Bi-Stepper Motors 12v
+- GT2 Timing belt, length depends on the machine dimension
+- GT2 Pulley
+- 1 x 9g 0-180 degree  Servo Motor, 
+- 1 x Arduino Uno
+- 1 x [CNC-Shield v3](https://blog.protoneer.co.nz/arduino-cnc-shield)
+- 2 x Pololu, step-dir stepper driver or compatible
+- A few jumpers (not wires), usually comes with stepper driver or CNC-shield
+- 1 x 12v Power supply and 3-core power cable  
+- Sufficient length of quality wire for 12v DC
+- Wires for extending the stepper and servo motors.
+- .
+- m3,m4 and m6 nuts, washers and bolts of various lengths
+- m15 washers or bolts or something similar to use as weights.
+- zip-ties
+- 3-5mm plywood sheet for laser cutting
+- 12mm or more thick plywood/MDF sheet or similar. Dimension corresponds to the dimension of the final machine.
+- Access to a 3D printer as there are a few 3D printed parts- 
 
 ## Mechanical Assembly 
 - **Mounting the timing belt to the gondola :** The timing belt has to be attached with the Gondola by pinching the belt between the pen-holder (it has a small tooth corresponding to the timing belt tooth) and a small securing laser-cut retainer.
@@ -260,8 +298,10 @@ Now we are done with the hard part. Load a vector and draw.
 # Limitations and improvements to be made
 
 - Gondola and pen holder
+  - The current design is only compatible with one type of pen. There are better designs using more expensive or difficult or get parts. But they may perform better.
 - End-stops (Most plotters like this does not have end stops and homing, but it should be doable with a little modification to the firmware)
-- Power supply upgrade or Stepper motor upgrade
+- Power supply upgrade or Stepper motor upgrade: 
+  - The power supply was 12v, but the available stepper motors are rated for 24v. Which means we are not getting the rated torque. We should wither use 24v supply, or 12v rated motor. I recommend the later, as we are using a builtin 5v linear regulator in Arduino to generate the 5v, doing this with 24v is not efficient and safe.
 
 
 
