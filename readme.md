@@ -292,7 +292,8 @@ Now we are done with the hard part. Load a vector and draw.
 - [PolarGraph](http://www.polargraph.co.uk) website
 - [Polargraph Wiki](https://github.com/euphy/polargraph/wiki)
 - [CNC-shield](https://blog.protoneer.co.nz/arduino-cnc-shield/)
-- [An inscrutable article](https://www.instructables.com/id/Polargraph-Drawing-Machine/)
+- [Inscrutable article](https://www.instructables.com/id/Polargraph-Drawing-Machine/)
+- [Latest Controller Software](https://github.com/euphy/polargraphcontroller/releases/tag/2017-11-01-20-30)
 
 
 #
